@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VC1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VC1" customModule="TransitionManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTf-JE-qkf">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xr-MS-NiK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tTf-JE-qkf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UAn-8G-7bu"/>
+                            <constraint firstItem="tTf-JE-qkf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppS-71-Ccw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tTf-JE-qkf" secondAttribute="trailing" constant="20" id="uJ6-q3-zji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tTf-JE-qkf" secondAttribute="bottom" constant="20" id="xCM-4N-92j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="55"/>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="A5W-Ta-vEX">
+            <objects>
+                <viewController storyboardIdentifier="VC2" id="4JX-CT-Y6e" customClass="VC2" customModule="TransitionManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tVd-Pk-l2C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2d-dQ-pGO">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hide"/>
+                                <connections>
+                                    <action selector="hideTapped" destination="4JX-CT-Y6e" eventType="touchUpInside" id="g6Q-Ig-xTz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="89t-Ro-FHD" firstAttribute="bottom" secondItem="n2d-dQ-pGO" secondAttribute="bottom" constant="20" id="1Xw-Go-oQW"/>
+                            <constraint firstItem="n2d-dQ-pGO" firstAttribute="leading" secondItem="89t-Ro-FHD" secondAttribute="leading" constant="20" id="NdH-lV-eRQ"/>
+                            <constraint firstItem="89t-Ro-FHD" firstAttribute="trailing" secondItem="n2d-dQ-pGO" secondAttribute="trailing" constant="20" id="w1U-1q-kdc"/>
+                            <constraint firstItem="n2d-dQ-pGO" firstAttribute="centerX" secondItem="tVd-Pk-l2C" secondAttribute="centerX" id="zba-HA-UOf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="89t-Ro-FHD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ2-BU-f34" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583" y="65"/>
+        </scene>
+    </scenes>
+</document>
